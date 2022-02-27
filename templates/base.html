@@ -28,7 +28,7 @@
       {% for todo in todo_list %}
       
   <div class="split">
-    <p>{{ todo.id }} | {{ todo.title }}  | {{ todo.date }}</p>
+    <p>{{ todo.id }} | {{ todo.title }}  <span class="shade"> {{ todo.date }}</span></p>
 
     {% if todo.complete==False %}
       <span>Not Complete</span>
@@ -44,8 +44,8 @@
 
     <form class="flex-con" action="./edit" method="POST">
       <input type="hidden" name="oldtitle" value= "{{ todo.title }}"placeholder=" Enter To Do...">
-      <input class="inputAd" type="text" name="newtitle" placeholder=" Edit To Do...">
-      <input class="edit" type="submit" value="Edit">
+      <input  type="text" name="newtitle" placeholder=" Edit To Do...">
+      <input class="button" type="submit" value="Edit">
       <br> 
     </form>
 

@@ -61,7 +61,6 @@
 
 }
 
-
 .container input[type=text]{
 
     width: 70%;
@@ -94,4 +93,12 @@ a{
     padding: 8px 20px;
     margin: 8px 0;
     border: none;
+}
+
+.shade{
+    border:1px solid;
+    background-color:darkslategray;
+    color: white;
+    padding: 5px;
+
 }
